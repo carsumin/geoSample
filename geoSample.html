@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- openlayers -->
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+  <!-- layer 제어 -->
+  <div>
+    <button name="node" onclick="fnNodeLayer()">node</button>
+    <button name="link" onclick="fnLinkLayer()">link</button>
+    <button name="dsrclink" onclick="fnDsrclinkLayer()">dsrclink</button>
+  </div>
+  <!-- 지도 -->
+  <div id="map" class="map"></div>
+  <!-- overlay용 팝업 -->
+  <div id="popup" class="ol-popup">
+    <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+    <div id="popup-content"></div>
+  </div>
+
+  <script type="text/javascript" src="geoMap.js"></script>
+  <script type="text/javascript" src="geoJSON/cmm_dsrclink.js"></script>
+  <script type="text/javascript" src="geoJSON/link_sample.js"></script>
+  <script type="text/javascript" src="geoJSON/node_sample.js"></script>
+</body>
+</html>
